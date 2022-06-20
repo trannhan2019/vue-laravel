@@ -28,13 +28,12 @@ class ProductController extends Controller
     public function store(StoreProductRequest $request)
     {
         $product = Product::create([
-            'tieu_de' => $request['tieu_de'],
-            'mo_ta' => $request['mo_ta'],
-            'hinh_anh' => null,
-            'ngay_nhap' => null
+            'tieu_de' => $request->tieu_de,
+            'mo_ta' => $request->mo_ta,
         ]);
         return new ProductResource($product);
         // return response()->json($request->tieu_de);
+        //dd($request);
     }
 
     /**

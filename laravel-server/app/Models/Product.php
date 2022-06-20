@@ -10,6 +10,6 @@ class Product extends Model
     use HasFactory;
 
     protected $fillable = [
-        'ten', 'mota', 'hinh_anh', 'ngay_nhap'
+        'tieu_de', 'mo_ta', 'hinh_anh', 'ngay_nhap'
     ];
 }
