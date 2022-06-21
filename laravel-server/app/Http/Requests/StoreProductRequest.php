@@ -25,7 +25,7 @@ class StoreProductRequest extends FormRequest
     {
         return [
             'tieu_de' => 'required|min:3',
-            'mo_ta' => 'required',
+            'mo_ta' => 'required|min:5',
         ];
     }
 }
