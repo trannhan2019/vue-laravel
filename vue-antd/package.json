@@ -7,6 +7,10 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^34.1.0",
+    "@ckeditor/ckeditor5-ckfinder": "^34.1.0",
+    "@ckeditor/ckeditor5-vue": "^4.0.1",
+    "@tinymce/tinymce-vue": "^4.0.7",
     "ant-design-vue": "^3.2.7",
     "axios": "^0.27.2",
     "pinia": "^2.0.14",
@@ -17,6 +21,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
+    "sass": "^1.52.3",
     "vite": "^2.9.9"
   }
 }
