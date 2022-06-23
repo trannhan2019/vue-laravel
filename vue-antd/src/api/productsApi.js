@@ -6,6 +6,6 @@ export const getAll = () => {
 };
 
 export const addProduct = (data) => {
-  const url = "/products";
+  const url = "/api/products";
   return axiosClient.post(url, data);
 };
