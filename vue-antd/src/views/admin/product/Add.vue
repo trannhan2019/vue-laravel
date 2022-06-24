@@ -8,7 +8,8 @@ import * as yup from "yup";
 
 import { addProduct } from "@/api/productsApi.js";
 import InputText2 from "@/components/form/InputText2.vue";
-import TinyMce from "@/components/form/TinyMce.vue";
+import QuillEditor from "@/components/form/QuillEditor.vue";
+// import TinyMce from "@/components/form/TinyMce.vue";
 
 const router = useRouter();
 const handleBack = () => {
@@ -40,7 +41,7 @@ const onSubmit = async (values, actions) => {
     <a-col :span="24">
       <Form :validation-schema="schema" @submit="onSubmit">
         <InputText2 name="tieu_de" label="Tieu de" type="text" />
-        <TinyMce name="mo_ta" label="Mo ta" />
+        <QuillEditor />
         <a-form-item>
           <a-button type="primary" html-type="submit">Submit</a-button>
         </a-form-item>
